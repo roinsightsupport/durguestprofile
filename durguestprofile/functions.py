@@ -326,7 +326,8 @@ def parse_clean_file(file):
     # Update dates
     for col in dframe.columns:
         if col.lower().endswith('date'):
-            dframe[col] = pd.to_datetime(dframe[col])
+            dframe[col] = pd.to_datetime(dframe[col], format='mixed')
+
 
     return dframe
 
@@ -464,6 +465,9 @@ def properties_score(files_folder=None,  criteria_file=None):
 
     # call the audit function and print the final score
     df = final_scoring(dframe, criteria_file)
+
+    # Change columns name to title case
+    df.columns = [col.replace('_', ' ').title() for col in df.columns]
 
     # save the final dataframe into same folder
     name_of_file = 'FINAL_AUDIT_DATE'

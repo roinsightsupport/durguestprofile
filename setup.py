@@ -12,7 +12,7 @@ def read(fname):
     return contents
 
 
-VERSION = '1.0.0'
+VERSION = '1.1.8'
 DESCRIPTION = 'Dur Guest Data Accuracy Measurement Tool'
 LONG_DESCRIPTION = read("README.md")
 
@@ -21,7 +21,7 @@ setup(
     # the name must match the folder name
     name="durguestprofile",
     version=VERSION,
-    license='MIT',
+    license='BSD',
     author="ROInsight.com - Muhammad Khlef",
     author_email="<support@roinsight.com>",
     description=DESCRIPTION,
@@ -39,16 +39,19 @@ setup(
         "sparse_dot_topn>=0.3.1",
         "scikit-learn>=1.1.1",
         "scipy>=1.10.0",
-        "matplotlib==3.7.1"
+        "matplotlib==3.7.1",
+        "google-i18n-address==2.5.2",
+        "phonenumbers==8.13.8"
+
         # add any additional packages
     ],
-    url="www.ROInsight.com",
+    url="",
     keywords=['python', 'dur', 'guest', 'opera', 'profile', 'audit'],
     classifiers=[
         "Development Status :: 5 - Production/Stable",
         "Programming Language :: Python",
         "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: License",
+        "License :: OSI Approved :: BSD License",
         "Operating System :: OS Independent",
         "Topic :: Software Development :: Interpreters",
         "Topic :: Software Development :: Version Control :: Git",

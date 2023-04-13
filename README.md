@@ -28,7 +28,7 @@ df = properties_score(files_folder=files_folder, criteria_file=criteria_file)
 
 ## Where to get it
 The source code is currently hosted on GitHub at: 
-https://github.com/roinsight/durguestprofile
+https://github.com/roinsightsupport/durguestprofile
 
 Binary installers for the latest released version are available at the [Python
 Package Index (PyPI)](https://pypi.org/project/durguestprofile).

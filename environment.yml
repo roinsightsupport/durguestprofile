@@ -66,4 +66,4 @@ dependencies:
     - lxml==4.9.2
     - pyparsing==3.0.9
     - xlsxwriter==3.0.9
-prefix: C:\Users\maalh836\Anaconda3\envs\guestprofileaudit
+prefix: C:\Users\user\Anaconda3\envs\guestprofileaudit

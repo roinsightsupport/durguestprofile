@@ -1,0 +1,49 @@
+make clean html & cd.. & sphinx-apidoc -f -o docs emeamarsha/ & cd docs & make html
+
+python setup.py sdist bdist_wheel & copy "C:\Users\maalh836\Marriott International\EMEA Analytics - Analytics Repository\_python\hamoud\marsha\dist\emeamarsha-1.0.0.tar.gz" "C:\Users\maalh836\Marriott International\MARSHA Conversion Script - General\Library and Requirements\setup_python_env\emeamarsha-1.0.0.tar.gz"
+
+python "C:\Users\maalh836\Marriott International\EMEA Analytics - Analytics Repository\_python\hamoud\marsha\emeamarsha\example\run_script.py"
+
+
+twine upload --skip-existing dist/*
+python setup.py sdist bdist_wheel & twine upload --skip-existing dist/*
+twine check dist/*
+
+-- Install in “develop” or “editable” mode:
+python -m pip install -e "C:\Users\maalh836\Desktop\Opera OSR\guestprofileaudit"
+
+python setup.py develop
+
+
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@git.marriott.com:maalh836/emeamarsha.git
+git push -u origin main
+
+
+marsha.login(id_number='356427', location='HQREG', enterprise_id='maalh836')
+
+
+
+github io
+https://python.plainenglish.io/how-to-host-your-sphinx-documentation-on-github-550254f325ae
+
+conda config --set ssl_verify no
+pip install --trusted-host pypi.python.org --trusted-host pypi.org --trusted-host files.pythonhosted.org {package name}
+
+make latex & cd _build/latex & >latexmk -pdf *.tex
+rst2pdf index.rst -o mydocument.pdf
+rst2pdf emeamarsha.rst -o emeamarsha.pdf
+
+
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/roinsight/durguestprofile.git
+git push -u origin main
+
+
+EsTA ceFv EQC7 1Cod o9fF t7YZ tAzg La8z ufqH 8Ui4 jNuv Mc1e

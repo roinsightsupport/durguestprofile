@@ -1,8 +1,8 @@
 make clean html & cd.. & sphinx-apidoc -f -o docs durguestprofile/ & cd docs & make html
 
 python setup.py sdist bdist_wheel 
-
 twine upload --skip-existing dist/*
+
 python setup.py sdist bdist_wheel & twine upload --skip-existing dist/*
 twine check dist/*
 

@@ -7,7 +7,7 @@ echo %CD%
 echo.=================================================================================
 echo.Create pywin32 folder and downloand python-3.9.13-embed-win32 from https://www.python.org/ftp/python/3.9.13/python-3.9.13-embed-win32.zip
 echo.Create virtualenv
-call python.exe -m pip install --trusted-host pypi.python.org --trusted-host pypi.org --trusted-host files.pythonhosted.org --no-warn-script-location virtualenv
+call python.exe -m pip install virtualenv
 call python.exe -m virtualenv env
 echo.-----------------------------------------------------------------------------------
 echo.Activate virtualenv
